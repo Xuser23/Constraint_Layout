@@ -24,20 +24,20 @@ public class MainActivity extends AppCompatActivity {
         edemail = findViewById(R.id.edEmail);
         edpassword = findViewById(R.id.edPassword);
 
-        btnsignin.OnClickListener(new View.OnClickListener(){
+        btnsignin.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
 
                 nama = edemail.getText().toString();
                 password = edpassword.getText().toString();
 
-                Toast t = Toast.makeText(getApplicationContext()),
-                "email anda: "+nama+" dan Password anda: "+password+"", Toast.LENGTH_LONG);
+                Toast t = Toast.makeText(getApplicationContext(),
+                        "email anda: "+nama+" dan password anda: "+password+"", Toast.LENGTH_LONG);
                 t.show();
 
 
             }
         });
-
     }
+
 }

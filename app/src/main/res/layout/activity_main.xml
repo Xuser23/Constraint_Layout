@@ -21,12 +21,12 @@
         tools:srcCompat="@drawable/logo_umy" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/btnSigIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:background="#00773F"
+        android:backgroundTint="#00773F"
         android:paddingLeft="30dp"
         android:paddingRight="30dp"
         android:text="@string/bSignin"
@@ -39,14 +39,14 @@
         app:layout_constraintVertical_bias="0.585" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/edEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:background="#ffffff"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="textEmailAddress"
         android:padding="12dp"
         android:hint="@string/tEmail"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -58,7 +58,7 @@
         android:autofillHints="no"/>
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/edPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
@@ -67,7 +67,7 @@
         android:background="#ffffff"
         android:ems="10"
         android:hint="@string/tPassword"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         android:padding="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
